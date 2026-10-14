@@ -37,13 +37,8 @@ export default function Header({ onJoin }) {
         className={menuOpen ? "nav-links open" : "nav-links"}
         id="main-navigation"
       >
-        {navigationItems.map(([label, href], index) => (
-          <a
-            key={label}
-            className={index === 0 ? "active" : ""}
-            href={href}
-            onClick={closeMenu}
-          >
+        {navigationItems.map(([label, href]) => (
+          <a key={label} href={href} onClick={closeMenu}>
             {label}
           </a>
         ))}
