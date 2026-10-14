@@ -56,7 +56,7 @@ function App() {
           <div className="container hero-content">
             <p className="eyebrow"><span /> STRONGER · HEALTHIER · HAPPIER</p>
             <h1>Your Fitness<br /><em>Journey Starts Here</em></h1>
-            <p className="hero-copy">At Fitness Gym, we're more than just a gym — we're a community built to help you become the best version of yourself. Whether you're a beginner or a pro, we've got the space, support, and programs to help you reach your goals.</p>
+            <p className="hero-copy">At Fitness Gym, we're more than just a gym - we're a community built to help you become the best version of yourself. Whether you're a beginner or a pro, we've got the space, support, and programs to help you reach your goals.</p>
             <div className="hero-actions">
               <button className="button" onClick={() => openJoin()}>Get Started <ArrowRight size={18} /></button>
               <a className="tour-link" href="#about"><span className="play-icon"><Play size={14} fill="currentColor" /></span> Discover the gym</a>
@@ -85,7 +85,7 @@ function App() {
             <div className="about-copy">
               <p className="section-kicker">ABOUT Fitness GYM</p>
               <h2>More Than a Gym.<br /><em>It's a Lifestyle.</em></h2>
-              <p>We believe fitness should feel challenging, rewarding, and welcoming. Our space is designed for people at every stage — from your very first workout to your next personal best.</p>
+              <p>We believe fitness should feel challenging, rewarding, and welcoming. Our space is designed for people at every stage - from your very first workout to your next personal best.</p>
               <p>Train with purpose, find your people, and build habits that last beyond the gym floor.</p>
               <a className="text-link" href="#classes">Explore our approach <ArrowRight size={17} /></a>
               <div className="about-stats"><div><b>01</b><span>YOUR GOALS</span></div><div><b>100%</b><span>YOUR JOURNEY</span></div><div><b>∞</b><span>YOUR POTENTIAL</span></div></div>
@@ -110,7 +110,7 @@ function App() {
 
         <section className="membership section-pad" id="membership">
           <div className="container membership-layout">
-            <div className="membership-intro"><p className="section-kicker">MEMBERSHIP</p><h2>Choose Your <em>Plan</em></h2><p>Flexible membership options to fit your lifestyle and goals. Start where you are — we'll help you grow.</p><div className="membership-note"><Check size={16} /> Simple options. No pressure.</div></div>
+            <div className="membership-intro"><p className="section-kicker">MEMBERSHIP</p><h2>Choose Your <em>Plan</em></h2><p>Flexible membership options to fit your lifestyle and goals. Start where you are - we'll help you grow.</p><div className="membership-note"><Check size={16} /> Simple options. No pressure.</div></div>
             <div className="plan-grid">
               {plans.map(plan => <article className={`plan-card ${plan.popular ? "featured" : ""}`} key={plan.name}>
                 {plan.popular && <span className="popular-label">MOST POPULAR</span>}
@@ -147,10 +147,10 @@ function App() {
             <form onSubmit={(e) => { e.preventDefault(); setSent(true); }}>
               <label>Full name<input required name="name" placeholder="Your name" /></label>
               <label>Email or phone<input required name="contact" placeholder="How can we reach you?" /></label>
-              <label>Membership plan<select value={selectedPlan} onChange={(e) => setSelectedPlan(e.target.value)}>{plans.map(p => <option key={p.name} value={p.name}>{p.name} — {p.price}/month</option>)}</select></label>
+              <label>Membership plan<select value={selectedPlan} onChange={(e) => setSelectedPlan(e.target.value)}>{plans.map(p => <option key={p.name} value={p.name}>{p.name} - {p.price}/month</option>)}</select></label>
               <button className="button form-submit" type="submit">Send enquiry <ArrowRight size={17} /></button>
             </form>
-            <p className="form-note">Demo form only — connect a backend or email service to receive enquiries.</p>
+            <p className="form-note">Demo form only - connect a backend or email service to receive enquiries.</p>
           </> : <div className="success-state"><span className="success-icon"><Check /></span><h2>You're on your way.</h2><p>Your demo enquiry has been submitted on this page. Connect a backend to store and deliver real enquiries.</p><button className="button" onClick={() => setModalOpen(false)}>Done <ArrowRight size={16} /></button></div>}
         </div>
       </div>}

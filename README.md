@@ -22,3 +22,6 @@ Run `npm run build`. The production website is generated in `dist/`.
 - Photos are loaded from Unsplash, and Google Fonts are loaded online.
 - The join form is front-end demo behavior only. Connect an API, database, email service, or WhatsApp link to receive real enquiries.
 - Replace the placeholder social links and add the gym's real address, phone number, hours, and branding before production.
+
+
+
