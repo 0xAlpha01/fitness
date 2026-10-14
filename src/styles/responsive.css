@@ -1,0 +1,277 @@
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 16px;
+  }
+  .nav-links > a {
+    font-size: 11px;
+  }
+  .hero {
+    min-height: 545px;
+  }
+  .hero-image {
+    left: 15%;
+  }
+  .hero-index {
+    right: 24px;
+  }
+  .feature-item {
+    padding: 5px 13px;
+    gap: 10px;
+  }
+  .feature-item h3 {
+    font-size: 12px;
+  }
+  .feature-item p {
+    font-size: 10px;
+  }
+  .about-grid {
+    gap: 32px;
+  }
+  .class-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .class-image {
+    height: 190px;
+  }
+  .membership-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .membership-intro {
+    max-width: 580px;
+  }
+  .membership-note {
+    margin-top: 15px;
+  }
+  .plan-card {
+    padding: 23px 16px 17px;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: calc(100% - 36px);
+  }
+  .topbar {
+    height: 68px;
+    padding: 0 18px;
+  }
+  .brand {
+    font-size: 18px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    padding: 20px 18px 24px;
+    background: #101313;
+    border-bottom: 1px solid #303633;
+    align-items: stretch;
+    gap: 0;
+    flex-direction: column;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-links > a {
+    padding: 13px 0;
+    font-size: 13px;
+    border-bottom: 1px solid #262b29;
+  }
+  .nav-links > a.active:after {
+    display: none;
+  }
+  .nav-join {
+    margin-top: 16px;
+    align-self: flex-start;
+  }
+  .hero {
+    min-height: 620px;
+    align-items: flex-end;
+  }
+  .hero-image {
+    inset: 0;
+    background-position: 58% center;
+    opacity: 0.7;
+  }
+  .hero-shade {
+    background: linear-gradient(
+      0deg,
+      #0b0d0e 4%,
+      rgba(11, 13, 14, 0.94) 35%,
+      rgba(11, 13, 14, 0.42) 100%
+    );
+  }
+  .hero-content {
+    padding-top: 210px;
+    padding-bottom: 35px;
+  }
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+  h1 {
+    font-size: clamp(40px, 11vw, 57px);
+    letter-spacing: -1.8px;
+  }
+  .hero-copy {
+    font-size: 12px;
+    line-height: 1.75;
+  }
+  .hero-actions {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .button {
+    padding: 14px 20px;
+  }
+  .tour-link {
+    font-size: 11px;
+  }
+  .hero-proof {
+    margin-top: 27px;
+  }
+  .hero-index {
+    display: none;
+  }
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px 0;
+    padding: 25px 0;
+  }
+  .feature-item {
+    padding: 0 10px;
+    border-right: 0;
+  }
+  .feature-item:nth-child(odd) {
+    padding-left: 0;
+    border-right: 1px solid #343939;
+  }
+  .feature-item:nth-child(even) {
+    padding-right: 0;
+    padding-left: 17px;
+  }
+  .feature-item h3 {
+    font-size: 12px;
+  }
+  .feature-item p {
+    font-size: 10px;
+  }
+  .section-pad {
+    padding: 55px 0;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .photo-frame {
+    height: 270px;
+  }
+  .about-copy h2 {
+    font-size: 35px;
+  }
+  .about-stats {
+    gap: 20px;
+  }
+  .about-stats b {
+    font-size: 20px;
+  }
+  .about-stats span {
+    font-size: 8px;
+  }
+  .section-heading {
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .section-heading h2 {
+    font-size: 30px;
+  }
+  .desktop-link {
+    display: none;
+  }
+  .class-grid {
+    gap: 12px;
+  }
+  .class-image {
+    height: 130px;
+  }
+  .class-info {
+    padding: 13px 10px;
+    align-items: flex-start;
+  }
+  .class-info h3 {
+    font-size: 12px;
+  }
+  .class-info p {
+    font-size: 9px;
+  }
+  .class-info .class-enquire-button {
+    width: 28px;
+    height: 28px;
+  }
+  .class-image > span {
+    font-size: 7px;
+    left: 8px;
+    top: 8px;
+  }
+  .membership-intro h2 {
+    font-size: 34px;
+  }
+  .plan-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .plan-card {
+    padding: 24px 20px 18px;
+  }
+  .plan-desc {
+    min-height: 0;
+  }
+  .plan-card ul {
+    margin-bottom: 20px;
+  }
+  .price {
+    font-size: 25px;
+  }
+  .plan-button {
+    max-width: none;
+  }
+  .cta-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .cta-strip h2 {
+    font-size: 29px;
+  }
+  .footer-main {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .footer-links {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .socials {
+    margin-left: auto;
+  }
+  .footer-bottom {
+    gap: 10px;
+    line-height: 1.5;
+  }
+  .join-modal {
+    padding: 30px 22px;
+  }
+  .join-modal h2 {
+    font-size: 28px;
+  }
+}
